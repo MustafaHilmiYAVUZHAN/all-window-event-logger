@@ -3,7 +3,6 @@ import win32gui
 import win32process
 import psutil
 from datetime import datetime, timedelta
-from customtkinter import *
 def get_process_filename(hwnd):
     try:
         pid = win32process.GetWindowThreadProcessId(hwnd)[1]
