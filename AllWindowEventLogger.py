@@ -80,4 +80,9 @@ def log_window_events():
         time.sleep(0.4)
 
 if __name__ == "__main__":
-    log_window_events()
+    while True:
+        try:
+            log_window_events()
+        except Exception as e :
+            print(f"ERROR       :{e}")
+            print("Restart AllWindowEventLogger")
